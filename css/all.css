@@ -1,0 +1,204 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*{
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+.clearfix{
+	clear: both;
+}
+
+.wraper{
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+/*/////////////共通內容-表頭///////////////*/
+.menu_bar{
+	max-width:100%;
+	background: rgba(0,0,0,1);
+}
+
+.menu_bar h1{
+	background-image: url(../img/logo_w1.png);
+	background-image: url(../img/logo_w.svg);
+	background-repeat:no-repeat;	
+	text-indent:101%;
+	overflow:hidden;
+	white-space:nowrap;
+	width: 120px;
+	height: 24px;
+	float: left;
+	margin: 16px 0px 16px 42px;
+}
+
+.menu_bar ul{
+	float: right;
+}
+
+.menu_bar ul li{
+	float:left;
+	margin: 18px 24px 17px 24px;
+}
+
+.ham_menu{
+	display: none;
+	color: #FFFFFF;
+}
+
+@media (max-width:768px){
+
+	.ham_menu{
+		display: block;
+		font-size: 24px;
+        color: #ffffff;
+        margin: 0px 20px 0px 0px;
+        float:right;
+	}
+
+	.menu_bar{
+		float: none;
+		position: fixed;
+	}
+
+	.menu_bar ul{
+		float: none;
+		max-height: 0px;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        z-index: 999;
+        transition: max-height 3s;
+        margin: 15px 0px 0px -13px;
+        overflow: hidden;
+        background: rgba(0,0,0,1);
+	}
+
+	.menu_bar ul li{
+		float: none;
+        border-bottom: solid 1px #ffffff;
+        padding: 10px 10px 10px 10px;
+	}
+
+	.menu_bar li a{
+		text-align: left;
+        transition: all 0.3s;
+	}
+
+	.show_menu .menu{
+		max-height: 600px;
+	}
+}
+
+.header {
+	background-image: url(../img/header_desktop.png);
+	height: 400px;
+	
+}
+
+.logo_info_bar{
+	background: rgba(0,0,0,0.75);	
+}
+
+.logo_info_bar h1{
+	background-image: url(../img/logo_w1.png);
+	background-image: url(../img/logo_w.svg);
+	background-repeat:no-repeat;	
+	text-indent:101%;
+	overflow:hidden;
+	white-space:nowrap;
+	width: 120px;
+	height: 24px;
+	float: left;
+	margin: 16px 0px 16px 42px;
+}
+
+.logo_info_bar ul{
+	float:right;
+}
+
+.logo_info_bar ul li{
+	float:left;
+	margin: 18px 24px 17px 24px;
+}
+
+.logo_info_bar li a{
+	text-decoration:none;
+	font-family: Microsoft JhengHei;
+	font-size: 16px;
+	color: #FFFFFF;
+}
+
+.banner_title{
+	background: rgba(0,0,0,0.35);
+	text-align: center;
+	font-family: Microsoft JhengHei;
+	color: #FFFFFF;
+	margin: 0 auto;
+	margin-top: 67px;
+	margin-bottom:145px;
+	max-width: 460px;
+}
+
+.banner_title h2{	
+	font-size: 36px;
+	padding:20px 0px 16px 0px;
+	background: rgba(0,0,0,0.35);	
+}
+
+.banner_title p{
+	font-size: 16px;
+	background: rgba(0,0,0,0.35);
+	padding:0px 128px 26px 128px;
+	line-height: 1.5;
+}
+
